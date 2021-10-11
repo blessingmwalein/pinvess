@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link href="./assets/css.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Your Cards</span>
+                <span class="badge bg-secondary rounded-pill" id="main_cards_no"></span>
+            </h4>
+            <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                        <h6 class="my-0">Receipt No</h6>
+                    </div>
+                    <span class="text-muted" id="receipt"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                        <h6 class="my-0"> Card Denomination</h6>
+                    </div>
+                    <span class="text-muted" id="denomination"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                        <h6 class="my-0">Total Cards</h6>
+                    </div>
+                    <span class="text-muted" id="total_cards"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                        <h6 class="my-0">Total Amount</h6>
+                    </div>
+                    <span class="text-muted" id="total_amount"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                        <h6 class="my-0">Cashier</h6>
+                    </div>
+                    <span class="text-muted" id="cashier"></span>
+                </li>
+            </ul>
+            <button id="myBtn" class="btn btn-warning">Print Cards</button>
+        </div>
+         <div id="cards" class="row">
+         </div>
+    </div>
+    <script src="./assets/html2pdf.js"></script>
+    <script src="./assets/app.js"></script>
+
+</body>
+
+</html>
